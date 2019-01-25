@@ -73,6 +73,6 @@ conf.each do|_,t|
   Mackerel.create_service_tsdb(service_name, [{
     name: "availability_ratio.#{monitor_name}",
     time: Time.now.to_i,
-    value: (period_to_sec(period) - result).to_f / period_to_sec(period) * 100
+    value: result == 0 ? 100 : (period_to_sec(period) - result).to_f / period_to_sec(period) * 100
   }])
 end
