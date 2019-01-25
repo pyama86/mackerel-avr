@@ -43,7 +43,7 @@ def query_param
 end
 
 Mackerel.configure do |config|
-  config.api_key = ENV['MACKEREL_APIKEY'] || options[:api_key]
+  config.api_key = ENV['MACKEREL_APIKEY']
 end
 
 conf.each do|_,t|
