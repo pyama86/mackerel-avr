@@ -1,0 +1,4 @@
+oohori_pyama:
+  monitor_name: "oohori-health-pyama-fun"
+  service_name: "oohori"
+  period: "week"

@@ -1,0 +1,4 @@
+profile_name:
+  monitor_name: "health-example.com"
+  service_name: "example"
+  period: "week" # week or month

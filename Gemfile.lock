@@ -1,0 +1,24 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    faraday (0.15.4)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.13.0)
+      faraday (>= 0.7.4, < 1.0)
+    hashie (3.6.0)
+    mackerel-rb (0.5.0)
+      faraday
+      faraday_middleware
+      hashie
+      thor
+    multipart-post (2.0.0)
+    thor (0.20.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  mackerel-rb
+
+BUNDLED WITH
+   1.17.2
