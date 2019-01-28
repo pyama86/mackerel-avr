@@ -1,4 +1,3 @@
-profile_name:
-  monitor_name: "health-example.com"
+<monitor_name>:
   service_name: "example"
   period: "week" # week or month

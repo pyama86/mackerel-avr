@@ -12,8 +12,7 @@ $ bundle exec ruby mackerel-avr.rb
 ## conf
 - avr.yml
 ```yaml
-profile_name:
-  monitor_name: "health-example.com"
+monitor_name:
   service_name: "example"
   period: "week" # week or month
 ```
