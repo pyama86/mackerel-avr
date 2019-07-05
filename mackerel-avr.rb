@@ -12,9 +12,9 @@ def start_day(period)
   d = Date.today
   case period
   when "month"
-    (d - (d.day)).to_time.to_i
+    (d - 30).to_time.to_i
   when "week"
-    (d - (d.wday)).to_time.to_i
+    (d - 7).to_time.to_i
   else
     raise "can't support period #{period}"
   end
