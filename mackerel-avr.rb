@@ -46,8 +46,7 @@ Mackerel.configure do |config|
   config.api_key = ENV['MACKEREL_APIKEY']
 end
 
-conf.each do|_,t|
-  monitor_name = t['monitor_name']
+conf.each do|monitor_name,t|
   service_name = t['service_name']
   period = t['period']
   result = 0
@@ -71,7 +70,7 @@ conf.each do|_,t|
   end
 
   Mackerel.create_service_tsdb(service_name, [{
-    name: "availability_ratio.#{monitor_name}",
+    name: "availability_ratio.#{period}.#{monitor_name}",
     time: Time.now.to_i,
     value: result == 0 ? 100 : (period_to_sec(period) - result).to_f / period_to_sec(period) * 100
   }])

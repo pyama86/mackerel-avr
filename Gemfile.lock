@@ -6,7 +6,7 @@ GEM
     faraday_middleware (0.13.0)
       faraday (>= 0.7.4, < 1.0)
     hashie (3.6.0)
-    mackerel-rb (0.5.0)
+    mackerel-rb (0.6.0)
       faraday
       faraday_middleware
       hashie
